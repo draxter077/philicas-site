@@ -21,7 +21,7 @@ export default function photos(){
     photos.appendChild(arrow())
 
     window.addEventListener(
-        "DOMContentLoaded",
+        "load",
         async function a(){
             let viewportHeight = window.innerHeight
             let viewportWidth = window.innerWidth
@@ -43,12 +43,7 @@ export default function photos(){
                 photos.children[i+2].style.opacity = 1
                 await new Promise(resolve => setTimeout(resolve, 25))
             }
-        }
-    )
 
-    window.addEventListener(
-        "load",
-        async function a(){
             photos.children[0].style.opacity = 1
             await new Promise(resolve => setTimeout(resolve, 2000))
             photos.children[1].style.opacity = 1
