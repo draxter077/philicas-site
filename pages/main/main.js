@@ -1,15 +1,19 @@
-import logo from "./logo/main.js"
+import cover from "./cover/main.js"
+import a from "./a/main.js"
+import b from "./b/main.js"
 
 export default function main(){
     let style = `
         {
-            position:relative;
+            display:flex;
+            flex-direction:column;
             width:100%;
-            height:100dvh;
-	        overflow:hidden;
+            height:100%;
         }`
 
     const main = cE("div", style)
-    main.appendChild(logo())
+    main.appendChild(cover())
+    main.appendChild(a())
+    main.appendChild(b())
     return(main)
 }
