@@ -17,6 +17,9 @@ export default function loading(){
             animation:changeColor 0.5s linear 1s 1 forwards;
             transition:all 0.5s;
         }
+        :responsive{
+            font-size:25px;
+        }
         @keyframes translateDot{
             0%[transform:translateX(0%)]
             100%[transform:translateX(100%)]
