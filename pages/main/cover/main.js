@@ -10,8 +10,6 @@ export default function cover(){
             width:100%;
             height:100svh;
             z-index:-1;
-
-            transition:all 0.25s;
         }`
 
     const cover = cE("div", style)
