@@ -1,5 +1,6 @@
 import loading from "./loading/main.js"
 import cover from "./cover/main.js"
+import introduction from "./introduction/main.js"
 import a from "./a/main.js"
 import b from "./b/main.js"
 
@@ -15,6 +16,7 @@ export default function main(){
     const main = cE("div", style)
     main.appendChild(loading())
     main.appendChild(cover())
+    main.appendChild(introduction())
     main.appendChild(a())
     main.appendChild(b())
     return(main)
