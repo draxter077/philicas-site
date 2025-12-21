@@ -12,8 +12,8 @@ export default function introduction(){
 
     const introduction = cE("div", style)
     introduction.appendChild(background())
-    introduction.appendChild(text("Teste"))
-    introduction.appendChild(text("Teste"))
+    introduction.appendChild(text("O que dar de presente?"))
+    introduction.appendChild(text("Um óleo de banho?"))
     introduction.appendChild(text("Teste"))
     introduction.appendChild(text("Teste"))
 
@@ -25,18 +25,17 @@ export default function introduction(){
             let d = window.location.toString().replaceAll("/404.html","")
 
             let background = introduction.children[0]
-            if(scrolled < viewport*3 && background.src != `${d}/assets/zootopia.jpg`){
+            if(scrolled < viewport*2.5 && background.src != ""){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
-                background.src = "./assets/zootopia.jpg"
-                await new Promise(resolve => setTimeout(resolve, 1))
+                background.src = ""
                 background.style.opacity = 0.5
             }
-            else if(scrolled >= viewport*3 && background.src != `${d}/assets/dengo.png`){
+            else if(scrolled >= viewport*2.5 && background.src != `${d}/assets/introduction/nivea.webp`){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
-                background.src = "./assets/dengo.png"
-                await new Promise(resolve => setTimeout(resolve, 1))
+                background.src = "./assets/introduction/nivea.webp"
+                await new Promise(resolve => setTimeout(resolve, 100))
                 background.style.opacity = 0.5
             }
         }

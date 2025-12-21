@@ -7,12 +7,11 @@ export default function background(){
             width:100%;
             height:100svh;
             opacity:0.5;
-            background:green;
+            background:black;
             object-fit:cover;
             transition:all 0.5s;
         }`
 
     const background = cE("img", style)
-    background.src = "./assets/zootopia.jpg"
     return(background)
 }
