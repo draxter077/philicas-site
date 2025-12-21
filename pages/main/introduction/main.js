@@ -22,7 +22,7 @@ export default function introduction(){
         async function a(){
             let viewport = window.innerHeight
             let scrolled = window.scrollY
-            let d = window.location.replaceAll("/404.html","")
+            let d = window.location.toString().replaceAll("/404.html","")
 
             let background = introduction.children[0]
             if(scrolled < viewport*3 && background.src != `${d}/assets/zootopia.jpg`){

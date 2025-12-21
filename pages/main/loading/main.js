@@ -11,7 +11,7 @@ export default function loading(){
             justify-content:center;
             height:100%;
             width:100%;
-            background:rgb(0,0,0);
+            background:black;
             color:black;
             font-size:40px;
             animation:changeColor 0.5s linear 1s 1 forwards;
@@ -47,6 +47,7 @@ export default function loading(){
     window.addEventListener(
         "load",
         async function a(){
+            await new Promise(resolve => setTimeout(resolve, 5000))
             loading.style.opacity = 0
             await new Promise(resolve => setTimeout(resolve, 501))
             document.getElementById("root").removeChild(loading)

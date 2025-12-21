@@ -8,7 +8,7 @@ export default function background(){
             height:100svh;
             opacity:0.5;
             background:green;
-            object-fit: cover;
+            object-fit:cover;
             transition:all 0.5s;
         }`
 
