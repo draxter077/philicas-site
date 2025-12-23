@@ -1,16 +1,16 @@
 export default function title(){
     let style = `
         {
-            font-size:35px;
+            font-size:28px;
             color:white;
             width:100%;
             text-align:left;
             border-top:1px solid red;
-            padding:2.5% 0px;
-            margin:2.5% 0px 0px 0px;
+            padding:2.5%;
+            margin:10% 0px 0px 0px;
         }
         :responsive{
-            font-size:21px;
+            font-size:17px;
         }
         >span{
             width:100%;

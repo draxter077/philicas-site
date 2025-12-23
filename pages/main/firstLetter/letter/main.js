@@ -1,7 +1,7 @@
 export default function letter(){
     let style = `
         {
-            height:80svh;
+            height:70svh;
             width:30%;
             border-radius:10px;
             padding:2px;

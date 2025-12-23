@@ -11,9 +11,12 @@ export default function end(){
         >span{
             background:red;
             padding:5px;
+        }
+        :responsive{
+            font-size:21px;
         }`
 
     const end = cE("div", style)
-    end.innerHTML = "Sei que essa carta ainda está curtinha<br>Mas temos a vida inteira para escrevermos ela <span>juntos</span><br><br>Estou ansioso por isso!<br><br><br><br>Você já viu meu Linkedin hoje?"
+    end.innerHTML = "Essa carta ainda está curtinha...<br><br>Ainda bem que temos a vida inteira para escrevermos ela <span>juntos</span><br><br>Estou ansioso por isso!<br><br><br><br>Você já viu meu Linkedin hoje?"
     return(end)
 }
