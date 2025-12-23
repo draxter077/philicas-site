@@ -12,7 +12,7 @@ export default function photo(numberOfArchivePhotos){
         async function a(){
             await new Promise(resolve => setTimeout(resolve, 0))
             while(true){
-                if(Math.random() > 0.95){
+                if(Math.random() > 0.97){
                     photo.style.opacity = 0
                     await new Promise(resolve => setTimeout(resolve, 501))
                     photo.src = ""

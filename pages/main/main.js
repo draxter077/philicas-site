@@ -1,6 +1,7 @@
 import loading from "./loading/main.js"
 import cover from "./cover/main.js"
 import introduction from "./introduction/main.js"
+import firstLetter from "./firstLetter/main.js"
 import dates from "./dates/main.js"
 import stats from "./stats/main.js"
 import linkedin from "./linkedin/main.js"
@@ -15,9 +16,10 @@ export default function main(){
         }`
 
     const main = cE("div", style)
-    main.appendChild(loading())
+    //main.appendChild(loading())
     main.appendChild(cover())
     main.appendChild(introduction())
+    main.appendChild(firstLetter())
     main.appendChild(dates())
     main.appendChild(stats())
     main.appendChild(linkedin())

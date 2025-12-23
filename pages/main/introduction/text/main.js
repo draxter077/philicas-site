@@ -2,7 +2,7 @@ export default function text(t){
     let style = `
         {
             display:flex;
-            align-items:center;
+            align-items:flex-start;
             justify-content:center;
             width:100%;
             height:100lvh;

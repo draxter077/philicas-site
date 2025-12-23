@@ -29,7 +29,7 @@ export default function photos(){
             if(viewportWidth > 1000){photoUnit = viewportWidth/12}else{photoUnit = viewportWidth/4}
 
             let numberOfPhotos = Math.floor(viewportHeight/photoUnit+1)*Math.floor(viewportWidth/photoUnit)
-            let numberOfArchivePhotos = 42
+            let numberOfArchivePhotos = 43
 
             for(let i = 0; i < numberOfPhotos; i++){
                 let p = photo(numberOfArchivePhotos)
