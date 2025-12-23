@@ -7,14 +7,15 @@ export default function photo(numberOfArchivePhotos){
 
     const photo = cE("img", style)
 
-    window.addEventListener(
-        "load",
+    photo.addEventListener(
+        "start",
         async function a(){
-            await new Promise(resolve => setTimeout(resolve, 5000))
+            await new Promise(resolve => setTimeout(resolve, 0))
             while(true){
-                if(Math.random() > 0.92){
+                if(Math.random() > 0.95){
                     photo.style.opacity = 0
-                    await new Promise(resolve => setTimeout(resolve, 450))
+                    await new Promise(resolve => setTimeout(resolve, 501))
+                    photo.src = ""
                     photo.src = "./assets/cover/" + Math.floor(Math.random()*(numberOfArchivePhotos)) + ".jpg"
                     photo.style.opacity = 1
                 }

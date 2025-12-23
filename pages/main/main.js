@@ -1,8 +1,9 @@
 import loading from "./loading/main.js"
 import cover from "./cover/main.js"
 import introduction from "./introduction/main.js"
-import a from "./a/main.js"
-import b from "./b/main.js"
+import dates from "./dates/main.js"
+import stats from "./stats/main.js"
+import linkedin from "./linkedin/main.js"
 
 export default function main(){
     let style = `
@@ -17,7 +18,8 @@ export default function main(){
     main.appendChild(loading())
     main.appendChild(cover())
     main.appendChild(introduction())
-    main.appendChild(a())
-    main.appendChild(b())
+    main.appendChild(dates())
+    main.appendChild(stats())
+    main.appendChild(linkedin())
     return(main)
 }

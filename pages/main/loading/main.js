@@ -17,9 +17,6 @@ export default function loading(){
             animation:changeColor 0.5s linear 1s 1 forwards;
             transition:all 0.5s;
         }
-        :responsive{
-            font-size:25px;
-        }
         @keyframes translateDot{
             0%[transform:translateX(0%)]
             100%[transform:translateX(100%)]
@@ -34,11 +31,14 @@ export default function loading(){
         }
         ::after{
             content:"";
-            width:5%;
-            height:5px;
+            width:100px;
+            height:3px;
             background:red;
             opacity:0;
             animation:translateDot 2s linear 0s infinite forwards alternate, appear 0.5s linear 2s 1 forwards;
+        }
+        :responsive{
+            font-size:25px;
         }`
 
     const loading = cE("div", style)
@@ -47,10 +47,10 @@ export default function loading(){
     window.addEventListener(
         "load",
         async function a(){
-            await new Promise(resolve => setTimeout(resolve, 5000))
+            await new Promise(resolve => setTimeout(resolve, 10000))
             loading.style.opacity = 0
             await new Promise(resolve => setTimeout(resolve, 501))
-            document.getElementById("root").removeChild(loading)
+            document.getElementById("root").children[0].removeChild(loading)
         }
     )
     return(loading)

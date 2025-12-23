@@ -39,11 +39,13 @@ export default function photos(){
                 photos.appendChild(p)
             }
 
-            await new Promise(resolve => setTimeout(resolve, 5000))
+            await new Promise(resolve => setTimeout(resolve, 10000))
 
             for(let i = 0; i < numberOfPhotos; i++){
                 photos.children[i+2].style.opacity = 1
                 await new Promise(resolve => setTimeout(resolve, 25))
+                let ev = new Event("start")
+                photos.children[i+2].dispatchEvent(ev)
             }
 
             photos.children[0].style.opacity = 1

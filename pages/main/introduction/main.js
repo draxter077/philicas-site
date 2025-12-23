@@ -12,10 +12,8 @@ export default function introduction(){
 
     const introduction = cE("div", style)
     introduction.appendChild(background())
-    introduction.appendChild(text("O que dar de presente?"))
-    introduction.appendChild(text("Um óleo de banho?"))
-    introduction.appendChild(text("Teste"))
-    introduction.appendChild(text("Teste"))
+    introduction.appendChild(text("Esse site não está finalizado, nem acabado"))
+    introduction.appendChild(text("E espero que não acabemos ele nunca..."))
 
     window.addEventListener(
         "scroll",
@@ -25,18 +23,11 @@ export default function introduction(){
             let d = window.location.toString().replaceAll("/404.html","")
 
             let background = introduction.children[0]
-            if(scrolled < viewport*2.5 && background.src != ""){
+            if(scrolled < viewport*2.5 && background.src != `${d}/assets/cover/11.jpg`){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
-                background.src = ""
-                background.style.opacity = 0.5
-            }
-            else if(scrolled >= viewport*2.5 && background.src != `${d}/assets/introduction/nivea.webp`){
-                background.style.opacity = 0
-                await new Promise(resolve => setTimeout(resolve, 501))
-                background.src = "./assets/introduction/nivea.webp"
-                await new Promise(resolve => setTimeout(resolve, 100))
-                background.style.opacity = 0.5
+                background.src = "./assets/cover/11.jpg"
+                background.style.opacity = 0.2
             }
         }
     )

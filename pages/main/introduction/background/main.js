@@ -5,7 +5,7 @@ export default function background(){
             top:0%;
             left:0%;
             width:100%;
-            height:100svh;
+            height:100lvh;
             opacity:0.5;
             background:black;
             object-fit:cover;

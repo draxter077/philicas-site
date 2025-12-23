@@ -5,9 +5,11 @@ export default function text(t){
             align-items:center;
             justify-content:center;
             width:100%;
-            height:100svh;
+            height:100lvh;
             color:white;
             font-size:40px;
+            padding:5%;
+            text-align:center;
             z-index:1;
         }
         :responsive{
