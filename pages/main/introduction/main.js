@@ -12,8 +12,9 @@ export default function introduction(){
 
     const introduction = cE("div", style)
     introduction.appendChild(background())
-    introduction.appendChild(text("Esse site não está finalizado, nem acabado"))
-    introduction.appendChild(text("E espero que não acabemos ele nunca..."))
+    introduction.appendChild(text("Esse presente não está finalizado, nem acabado..."))
+    introduction.appendChild(text("E ele nunca ficará"))
+    introduction.appendChild(text("Nós vamos criar ele com o tempo"))
 
     window.addEventListener(
         "scroll",
@@ -23,10 +24,16 @@ export default function introduction(){
             let d = window.location.toString().replaceAll("/404.html","")
 
             let background = introduction.children[0]
-            if(scrolled < viewport*2.5 && background.src != `${d}/assets/cover/11.jpg`){
+            if(scrolled < viewport*3.5 && background.src != `${d}/assets/introduction/1.jpg`){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
-                background.src = "./assets/cover/11.jpg"
+                background.src = "./assets/introduction/1.jpg"
+                background.style.opacity = 0.2
+            }
+            else if(scrolled >= viewport*3.5 && background.src != `${d}/assets/introduction/2.jpg`){
+                background.style.opacity = 0
+                await new Promise(resolve => setTimeout(resolve, 501))
+                background.src = "./assets/introduction/2.jpg"
                 background.style.opacity = 0.2
             }
         }
