@@ -24,18 +24,20 @@ export default function introduction(){
             let d = window.location.toString().replaceAll("/404.html","")
 
             let background = introduction.children[0]
+            console.log(d)
+            console.log(background.src)
             if(scrolled < viewport*3.5 && background.src != `${d}/assets/introduction/1.jpg`){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
                 background.src = ""
-                background.src = "./assets/introduction/1.jpg"
+                background.src = `${d}/assets/introduction/1.jpg`
                 background.style.opacity = 0.2
             }
             else if(scrolled >= viewport*3.5 && background.src != `${d}/assets/introduction/2.jpg`){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
                 background.src = ""
-                background.src = "./assets/introduction/2.jpg"
+                background.src = `${d}/assets/introduction/2.jpg`
                 background.style.opacity = 0.2
             }
         }
