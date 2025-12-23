@@ -17,6 +17,16 @@ export default function introduction(){
     introduction.appendChild(text("Nós vamos criar ele com o tempo"))
 
     window.addEventListener(
+        "load",
+        async function a(){ // 10s after load to test
+            let b = introduction.children[0]
+            b.src = `${d}/assets/introduction/2.jpg`
+            await new Promise(resolve => setTimeout(resolve, 2000))
+            b.src = `${d}/assets/introduction/1.jpg`
+        }
+    )
+
+    window.addEventListener(
         "scroll",
         async function a(){
             let viewport = window.innerHeight
@@ -24,8 +34,6 @@ export default function introduction(){
             let d = window.location.toString().replaceAll("/404.html","")
 
             let background = introduction.children[0]
-            console.log(d)
-            console.log(background.src)
             if(scrolled < viewport*3.5 && background.src != `${d}/assets/introduction/1.jpg`){
                 background.style.opacity = 0
                 await new Promise(resolve => setTimeout(resolve, 501))
