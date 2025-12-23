@@ -12,8 +12,8 @@ export default function introduction(){
 
     const introduction = cE("div", style)
     introduction.appendChild(background())
-    introduction.appendChild(text("Esse presente não está finalizado, nem acabado..."))
-    introduction.appendChild(text("E ele nunca ficará"))
+    introduction.appendChild(text("Esse presente não está pronto, não está acabado"))
+    introduction.appendChild(text("E receio que ele nunca ficará..."))
     introduction.appendChild(text("Nós vamos criar ele com o tempo"))
 
     window.addEventListener(
