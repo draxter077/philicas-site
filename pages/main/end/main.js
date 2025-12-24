@@ -17,6 +17,6 @@ export default function end(){
         }`
 
     const end = cE("div", style)
-    end.innerHTML = "Essa carta seria a carta do nosso amor!<br><br>Ela ainda está curtinha...<br>Ainda bem que temos a vida inteira para escrevermos ela <span>juntos</span><br><br>Estou ansioso por isso!<br><br><br><br>Você já viu meu Linkedin hoje?"
+    end.innerHTML = "Essa carta seria a carta do nosso amor, que nós dois escrevemos todos os dias<br><br>Ela ainda está curtinha...<br>Mas ainda bem que temos a vida inteira para escrevermos ela <span>juntos</span><br><br>Estou ansioso por isso!<br><br><br><br>Você já viu meu Linkedin hoje?"
     return(end)
 }

@@ -18,7 +18,7 @@ export default function main(){
         }`
 
     const main = cE("div", style)
-    main.appendChild(loading())
+    //main.appendChild(loading())
     main.appendChild(cover())
     main.appendChild(introduction())
     main.appendChild(firstLetter())

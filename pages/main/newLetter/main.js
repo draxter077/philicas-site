@@ -17,8 +17,8 @@ export default function newLetter(){
         }`
 
     const newLetter = cE("div", style)
-    newLetter.appendChild(title("left", "Em minha defesa, não existiam muitas coisas que podia te falar, embora existissem muitas que quisesse dizer.<br>Agora, estou na situação oposta: <span>por onde começar a falar?</span><br><br>Não queria deixar nada de fora, pois que todo detalhe é importante"))
+    newLetter.appendChild(title("left", "Em minha defesa, não existiam muitas coisas que podia te falar, embora existissem muitas que já quisesse dizer. Escreveria muitas coisas a mais nela se pudesse voltar no tempo (talvez já tenha fechado meus punhos em um armário tentando isso)<br>Não quero escrever uma nova carta que falhe em expressar tudo o que sinto, e me parece que uma carta convencional me levaria justamente a isso..."))
     newLetter.appendChild(img())
-    newLetter.appendChild(title("right", "E que tal uma carta que sempre falasse de nós?<br>E que sempre se atualizasse?<br>Uma carta que <span>nós dois</span> pudéssemos escrever?"))
+    newLetter.appendChild(title("right", "E se existisse uma carta cujas palavras eu pudesse mudar conforme meu amor aumenta?<br>Uma carta que <span>nós dois</span> pudéssemos escrever?<br>Uma carta que jamais me deixaria sem dizer o que quero?"))
     return(newLetter)
 }

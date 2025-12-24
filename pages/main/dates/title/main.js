@@ -10,6 +10,6 @@ export default function title(){
         }`
 
     const title = cE("div", style)
-    title.innerHTML = "Adoraria deixar nela algumas datas importantes"
+    title.innerHTML = "Se ela existisse, adoraria deixar nela algumas datas importantes"
     return(title)
 }
