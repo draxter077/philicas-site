@@ -10,7 +10,7 @@ export default function firstLetter(){
             align-items:center;
             width:100%;
             background:black;
-            padding:5% 5% 0%;
+            padding:5%;
         }`
 
     const firstLetter = cE("div", style)

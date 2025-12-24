@@ -1,18 +1,18 @@
 import title from "./title/main.js"
 import content from "./content/main.js"
 
-export default function dates(){
+export default function list(){
     let style = `
         {
             display:flex;
             flex-direction:column;
             width:100%;
-            padding:5% 0% 0%;
+            padding:5% 0%;
             background:black;
         }`
 
-    const dates = cE("div", style)
-    dates.appendChild(title())
-    dates.appendChild(content())
-    return(dates)
+    const list = cE("div", style)
+    list.appendChild(title())
+    list.appendChild(content())
+    return(list)
 }

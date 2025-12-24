@@ -4,6 +4,7 @@ import introduction from "./introduction/main.js"
 import firstLetter from "./firstLetter/main.js"
 import newLetter from "./newLetter/main.js"
 import dates from "./dates/main.js"
+import list from "./list/main.js"
 import stats from "./stats/main.js"
 import end from "./end/main.js"
 
@@ -23,6 +24,7 @@ export default function main(){
     main.appendChild(firstLetter())
     main.appendChild(newLetter())
     main.appendChild(dates())
+    main.appendChild(list())
     main.appendChild(stats())
     main.appendChild(end())
     return(main)
