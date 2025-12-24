@@ -11,6 +11,9 @@ export default function content(){
             width:100%;
             padding:5%;
             background:black;
+        }
+        :responsive{
+            padding:2.5%;
         }`
 
     const content = cE("div", style)

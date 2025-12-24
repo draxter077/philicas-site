@@ -8,6 +8,9 @@ export default function item(m, t){
             border-radius:5px;
             margin:5px;
             ${m == true ? "text-decoration:line-through;" : ""}
+        }
+        :responsive{
+            font-size:12px;
         }`
 
     const item = cE("div", style)
